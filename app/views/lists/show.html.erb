@@ -12,10 +12,8 @@
       <h2><%= bookmark.movie.title %></h2>
       <p><%= bookmark.movie.overview %></p>
       <%# how do we get the movie_id param %>
-      <%= link_to 'Destroy', bookmark_path(params:{bookmark_id:bookmark}), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
-
-      <%= button_to 'Destroy', bookmark_path(params:{bookmark_id:bookmark}), method: :delete, form:
-  { data: { turbo: true, turbo_confirm: 'Are you sure?' } } %>
+      <%= link_to 'Destroy', bookmark_path(params:{bookmark_id:bookmark}),
+       data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
     </div>
   </div>
 </div>
