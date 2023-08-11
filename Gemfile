@@ -47,6 +47,8 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 gem "sassc-rails"
+gem 'cloudinary', '~> 1.16.0'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Sass to process CSS
 
